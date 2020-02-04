@@ -12,7 +12,7 @@ import Foundation
 
 class ViewController: UIViewController {
 
-    enum OperatorType:String{
+    enum OperatorType{
         case addition
         case multiplication
         case division
@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     var rightOperand:String?
     var operatorType:OperatorType?
     var outputString:String?
-    var equalsString:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +46,12 @@ class ViewController: UIViewController {
         
             parentView.subviews.forEach { (view) in
             if view is UIButton{
-                (view as! UIButton).addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
+                var buttonView:UIButton!
+                buttonView = view as? UIButton
+                if(buttonView!.tag == 16){
+                    buttonView.setTitle("%", for: .normal)
+                }
+                buttonView.addTarget(self, action: #selector(buttonPressed(_:)), for: .touchUpInside)
             }else{
                 self.attachActionToButtons(parentView: view)
             }
@@ -188,7 +192,7 @@ class ViewController: UIViewController {
     }
     func noImplementationAvailable(){
         
-        let alertController = UIAlertController(title: "Calculator App", message: "The button hasn't been wired", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "Calculator App", message: "The button hasn't been wired and implemented Yet!", preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title:NSLocalizedString("OK", comment: ""), style: UIAlertAction.Style.default) {(action) in
         }
         alertController.addAction(okAction)
