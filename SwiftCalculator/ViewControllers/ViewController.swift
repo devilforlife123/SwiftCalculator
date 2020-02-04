@@ -155,12 +155,10 @@ class ViewController: UIViewController {
     
     func dealWithOperand(_ senderTag:Int){
         
-        guard leftOperand != nil else{
+        guard leftOperand != nil || leftOperand  != "inf" else{
             return
         }
-        guard leftOperand != "inf" else{
-            return
-        }
+        
         if (rightOperand != nil){
             leftOperand = String(self.calculateOutput()!)
             outputLabel.text = leftOperand
