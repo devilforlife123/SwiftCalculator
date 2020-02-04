@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wO6-zC-v5f">
+                                <rect key="frame" x="0.0" y="54" width="414" height="798"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cPS-D8-ST1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="91.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haL-5g-O1W">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="91.333333333333329"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BEu-Yv-p6D">
+                                        <rect key="frame" x="0.0" y="141.33333333333334" width="414" height="91.333333333333343"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfG-Qb-a8B">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVC-6Y-ULS" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="dVC-6Y-ULS" secondAttribute="bottom" id="FVs-f8-ZtS"/>
+                                                    <constraint firstItem="dVC-6Y-ULS" firstAttribute="top" secondItem="NfG-Qb-a8B" secondAttribute="top" id="emy-Ay-J6Y"/>
+                                                    <constraint firstItem="dVC-6Y-ULS" firstAttribute="leading" secondItem="NfG-Qb-a8B" secondAttribute="leading" id="q6q-gA-S1J"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dVC-6Y-ULS" secondAttribute="trailing" id="zaX-X4-1Gg"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWE-N1-RX1">
+                                                <rect key="frame" x="106" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7U-tb-NaX" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="±">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Y7U-tb-NaX" firstAttribute="leading" secondItem="AWE-N1-RX1" secondAttribute="leading" id="Bht-vY-K9T"/>
+                                                    <constraint firstItem="Y7U-tb-NaX" firstAttribute="top" secondItem="AWE-N1-RX1" secondAttribute="top" id="m44-nE-20v"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Y7U-tb-NaX" secondAttribute="trailing" id="oAo-Pm-Izs"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Y7U-tb-NaX" secondAttribute="bottom" id="qm8-dK-Bt7"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4r7-q7-ULP">
+                                                <rect key="frame" x="212" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XH6-fW-FIP" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="XH6-fW-FIP" secondAttribute="trailing" id="7Zk-aB-q9z"/>
+                                                    <constraint firstItem="XH6-fW-FIP" firstAttribute="top" secondItem="4r7-q7-ULP" secondAttribute="top" id="bUo-l5-WvE"/>
+                                                    <constraint firstItem="XH6-fW-FIP" firstAttribute="leading" secondItem="4r7-q7-ULP" secondAttribute="leading" id="mMS-ZD-5Kd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="XH6-fW-FIP" secondAttribute="bottom" id="t75-r5-ASo"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2VG-2U-mNu">
+                                                <rect key="frame" x="318" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mZ-E5-C3l" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="3mZ-E5-C3l" secondAttribute="trailing" id="6hL-F5-iu1"/>
+                                                    <constraint firstItem="3mZ-E5-C3l" firstAttribute="top" secondItem="2VG-2U-mNu" secondAttribute="top" id="QkM-l5-5gB"/>
+                                                    <constraint firstItem="3mZ-E5-C3l" firstAttribute="leading" secondItem="2VG-2U-mNu" secondAttribute="leading" id="Ql5-Lm-xXg"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3mZ-E5-C3l" secondAttribute="bottom" id="XQR-zR-j0y"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="0jB-vv-DUf">
+                                        <rect key="frame" x="0.0" y="282.66666666666669" width="414" height="91.333333333333314"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zf-hi-aOb">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBT-Sq-LMt" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="QBT-Sq-LMt" firstAttribute="top" secondItem="5Zf-hi-aOb" secondAttribute="top" id="9Dh-2h-IGK"/>
+                                                    <constraint firstAttribute="bottom" secondItem="QBT-Sq-LMt" secondAttribute="bottom" id="H9j-CJ-rBe"/>
+                                                    <constraint firstItem="QBT-Sq-LMt" firstAttribute="leading" secondItem="5Zf-hi-aOb" secondAttribute="leading" id="qe0-a5-aDy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QBT-Sq-LMt" secondAttribute="trailing" id="tG6-fY-dIH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybc-bv-knc">
+                                                <rect key="frame" x="106" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Huq-c8-ypn" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Huq-c8-ypn" secondAttribute="bottom" id="Dno-xt-UaZ"/>
+                                                    <constraint firstItem="Huq-c8-ypn" firstAttribute="top" secondItem="ybc-bv-knc" secondAttribute="top" id="LXX-9W-KlV"/>
+                                                    <constraint firstItem="Huq-c8-ypn" firstAttribute="leading" secondItem="ybc-bv-knc" secondAttribute="leading" id="XcI-QT-YE2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Huq-c8-ypn" secondAttribute="trailing" id="eqo-zo-yNi"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qr-ca-gz2">
+                                                <rect key="frame" x="212" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVb-po-mac" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="uVb-po-mac" firstAttribute="leading" secondItem="0Qr-ca-gz2" secondAttribute="leading" id="7Np-6M-cfA"/>
+                                                    <constraint firstItem="uVb-po-mac" firstAttribute="top" secondItem="0Qr-ca-gz2" secondAttribute="top" id="tAz-IG-Wtx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="uVb-po-mac" secondAttribute="bottom" id="w84-6P-GwW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="uVb-po-mac" secondAttribute="trailing" id="wKy-Yh-mfO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6g8-Zx-uTx">
+                                                <rect key="frame" x="318" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajc-PP-tBH" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="×">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Ajc-PP-tBH" firstAttribute="top" secondItem="6g8-Zx-uTx" secondAttribute="top" id="OZq-sp-dKR"/>
+                                                    <constraint firstItem="Ajc-PP-tBH" firstAttribute="leading" secondItem="6g8-Zx-uTx" secondAttribute="leading" id="dK8-ge-VH1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ajc-PP-tBH" secondAttribute="trailing" id="dt7-aa-f48"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Ajc-PP-tBH" secondAttribute="bottom" id="tFF-zv-1cF"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="cKj-xf-vLu">
+                                        <rect key="frame" x="0.0" y="424" width="414" height="91.333333333333371"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIy-jZ-ao3">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Q9-IW-5wG" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="0Q9-IW-5wG" firstAttribute="leading" secondItem="SIy-jZ-ao3" secondAttribute="leading" id="BpC-PX-Wpb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0Q9-IW-5wG" secondAttribute="bottom" id="D8s-OI-9Qb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="0Q9-IW-5wG" secondAttribute="trailing" id="Tgs-F4-i0H"/>
+                                                    <constraint firstItem="0Q9-IW-5wG" firstAttribute="top" secondItem="SIy-jZ-ao3" secondAttribute="top" id="ohy-Jj-YVT"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-zI-NgU">
+                                                <rect key="frame" x="106" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBn-gn-kmu" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="fBn-gn-kmu" firstAttribute="top" secondItem="PIg-zI-NgU" secondAttribute="top" id="5aW-bT-Vlf"/>
+                                                    <constraint firstItem="fBn-gn-kmu" firstAttribute="leading" secondItem="PIg-zI-NgU" secondAttribute="leading" id="Vzc-l7-BxT"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fBn-gn-kmu" secondAttribute="trailing" id="aE3-Q4-9oT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fBn-gn-kmu" secondAttribute="bottom" id="neM-CH-YdH"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-29-6iA">
+                                                <rect key="frame" x="212" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmo-31-Bui" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="Mmo-31-Bui" firstAttribute="leading" secondItem="6Nn-29-6iA" secondAttribute="leading" id="61P-9h-sBm"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Mmo-31-Bui" secondAttribute="bottom" id="C1I-UI-xoC"/>
+                                                    <constraint firstItem="Mmo-31-Bui" firstAttribute="top" secondItem="6Nn-29-6iA" secondAttribute="top" id="cLZ-Ff-HdN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mmo-31-Bui" secondAttribute="trailing" id="sXf-4r-h2J"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jm-jH-vNU">
+                                                <rect key="frame" x="318" y="0.0" width="96" height="91.333333333333329"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mcg-Go-ZWy" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Mcg-Go-ZWy" secondAttribute="bottom" id="2GX-hG-yVL"/>
+                                                    <constraint firstItem="Mcg-Go-ZWy" firstAttribute="top" secondItem="2Jm-jH-vNU" secondAttribute="top" id="6rh-5c-fnH"/>
+                                                    <constraint firstItem="Mcg-Go-ZWy" firstAttribute="leading" secondItem="2Jm-jH-vNU" secondAttribute="leading" id="929-uD-h8d"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mcg-Go-ZWy" secondAttribute="trailing" id="bYY-U7-oX0"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5Hl-Kk-d4T">
+                                        <rect key="frame" x="0.0" y="565.33333333333337" width="414" height="91.333333333333371"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjp-wS-B7m" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="91.333333333333329"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWe-Ur-Bt6" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="106" y="0.0" width="96" height="91.333333333333329"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y88-bi-qUK" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="212" y="0.0" width="96" height="91.333333333333329"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8S-98-TlT" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="318" y="0.0" width="96" height="91.333333333333329"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=compact-widthClass=regular" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-gF-25a">
+                                        <rect key="frame" x="0.0" y="706.66666666666663" width="414" height="91.333333333333371"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqG-yN-IOk">
+                                                <rect key="frame" x="0.0" y="0.0" width="202" height="91.333333333333329"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAJ-3E-anL" userLabel="." customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="212" y="0.0" width="96" height="91.333333333333329"/>
+                                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WnQ-NX-prB" customClass="RoundedButton" customModule="SwiftCalculator" customModuleProvider="target">
+                                                <rect key="frame" x="318" y="0.0" width="96" height="91.333333333333329"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=compact" spacing="10"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PqG-yN-IOk" firstAttribute="trailing" secondItem="nWe-Ur-Bt6" secondAttribute="trailing" id="Avz-vm-eac"/>
+                                    <constraint firstItem="WnQ-NX-prB" firstAttribute="leading" secondItem="o8S-98-TlT" secondAttribute="leading" id="Qnw-Td-Dmh"/>
+                                    <constraint firstItem="PqG-yN-IOk" firstAttribute="leading" secondItem="Xjp-wS-B7m" secondAttribute="leading" id="jpQ-al-aFy"/>
+                                    <constraint firstItem="WnQ-NX-prB" firstAttribute="trailing" secondItem="o8S-98-TlT" secondAttribute="trailing" id="ytH-rY-nmZ"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" baselineRelativeArrangement="NO" spacing="5"/>
+                                <variation key="heightClass=regular-widthClass=compact" spacing="50"/>
+                                <variation key="heightClass=regular-widthClass=regular" spacing="10"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wO6-zC-v5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LFb-TR-FRU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wO6-zC-v5f" secondAttribute="trailing" id="YES-Dv-0I5"/>
+                            <constraint firstItem="wO6-zC-v5f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="cM2-sx-nk9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wO6-zC-v5f" secondAttribute="bottom" constant="10" id="xJD-MM-zo4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="haL-5g-O1W" id="GUu-eJ-2zk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="298" y="67"/>
+        </scene>
+    </scenes>
+</document>
